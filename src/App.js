@@ -1,22 +1,20 @@
-import './App.css';
+import Greeting from "./greeting";
+import Greet from "./greet";
+import Button from "./button";
+import InputField from "./input-field";
+import Form from "./form";
+
 
 function App() {
+  const handleGreet = () => {};
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Greeting>
+        <Greet />
+        <Button />
+        <InputField />
+        <Form onGreet={handleGreet}/>
+      </Greeting>
   );
 }
 
