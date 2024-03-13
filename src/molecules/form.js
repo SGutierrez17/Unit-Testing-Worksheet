@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Form({ onGreet }) {
+export default function Form() {
     const [name, setName] = React.useState('');
     const [greeting, setGreeting] = React.useState('Welcome!');
 
@@ -14,10 +14,10 @@ export default function Form({ onGreet }) {
     };
 
     return (
-    <form onSubmit={handleButtonClick}>
-        <input type='text' placeholder="Enter your name" value={name} onChange={handleChange} />
-        <button type="submit">Enter</button>
-        {greeting && <p>{greeting}</p>}
-    </form>
+        <form onSubmit={handleButtonClick}>
+            <input type='text' placeholder="Enter your name" value={name} onChange={handleChange} name="sergio" />
+            <button type="Submit">Enter</button>
+            {greeting && <p>{greeting}</p>}
+        </form>
     );
 }

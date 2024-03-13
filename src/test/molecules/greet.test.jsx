@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 
-import Greet from '../greet'; 
+import Greet from '../../molecules/greet'; 
 
 test('renders "Hello, World!" message', () => {
   render (<Greet>Hello, World!</Greet>);
